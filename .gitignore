@@ -1,0 +1,111 @@
+# Unreal Engine 5 GitIgnore
+# Covers: UE5 Projects, C++, Blueprints,
+# Visual Studio, Rider, VSCode, Derived Data,
+# Plugins, Saved, Binaries, Intermediate, etc.
+###############################################
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+########################
+# Unreal Engine folders
+########################
+
+# Generated project files
+*.sln
+*.xcodeproj
+*.xcworkspace
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.userprefs
+
+# Derived Data Cache
+DerivedDataCache/
+DerivedDataCache/*
+
+# Intermediate build products
+Intermediate/
+Intermediate/**
+
+# Build outputs
+Binaries/
+Binaries/**
+
+# Saved (autosaves, logs, backups)
+Saved/
+Saved/**
+
+# Local build + config artifacts
+Build/*/NetCore/
+Build/Receipts/
+
+# Compiled shaders & cooked assets
+Shaders/WorkingDirectory/*
+*AssetRegistry.bin
+*.manifest
+
+########################
+# Project-specific
+########################
+
+# Ignore project-specific IDE files
+.vscode/
+.vscode/*
+.idea/
+*.ipr
+*.iws
+*.iml
+.vs/
+.vs/*
+
+# Rider C++ cache
+.rider/
+.rider/*
+
+# Optional: If using Perforce workspace files
+*.p4ignore
+*.p4config
+
+########################
+# Platform-specific junk
+########################
+# Mac
+*.swp
+*.orig
+
+# Windows crash reports
+*.dmp
+
+########################
+# Unreal Plugins
+########################
+# Ignore plugin build products
+Plugins/*/Intermediate/
+Plugins/*/Binaries/
+Plugins/*/Saved/
+
+########################
+# Avoid ignoring the actual source!
+########################
+!Source/
+!Content/
+
+########################
+# If you want to track Config but not local overrides
+########################
+# Keep Config folder
+!Config/
+# Except local developer overrides
+Config/DefaultEditorPerProjectUserSettings.ini
+Config/DefaultEditorUserSettings.ini
+
+########################
+# Optional large temp folders (recommended ignore)
+########################
+# Local saved build data
+Script/
+DerivedDataCache/
+.cache/
